@@ -70,6 +70,12 @@ It covers **data ingestion, transformation, storage, querying, and automation** 
 5. Query insights using **Synapse Analytics**.
 
 ---
+
+## Architect Diagram
+<a href ="[https://github.com/darshant15/Data-Analysis-Dashboard-On-Swiggy-Instamart-Sales-Report-/commit/03f450ebe733933eb48e4b187ce8549c047f3f4e">**Architect-**(https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg)</a>
+
+---
+
 ## 📌 Author
 
 👤 **Darshan T**
@@ -81,8 +87,5 @@ It covers **data ingestion, transformation, storage, querying, and automation** 
 ✨ This project highlights **real-world Azure Data Engineering skills** – from ingestion to automation – and can be extended with **Power BI dashboards** for visualization if it's required.
 
 ---
-
-## Architect Diagram
-<a href ="[https://github.com/darshant15/Data-Analysis-Dashboard-On-Swiggy-Instamart-Sales-Report-/commit/03f450ebe733933eb48e4b187ce8549c047f3f4e">**Architect-**(https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg)</a>
 
 
