@@ -72,7 +72,7 @@ It covers **data ingestion, transformation, storage, querying, and automation** 
 ---
 
 ## Architect Diagram
-<a href ="[https://github.com/darshant15/Data-Analysis-Dashboard-On-Swiggy-Instamart-Sales-Report-/commit/03f450ebe733933eb48e4b187ce8549c047f3f4e">**Architect-**(https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg)</a>
+<a href ="[https://github.com/darshant15/Data-Analysis-Dashboard-On-Swiggy-Instamart-Sales-Report-/commit/03f450ebe733933eb48e4b187ce8549c047f3f4e">**Architect-** https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg </a>
 
 ---
 
