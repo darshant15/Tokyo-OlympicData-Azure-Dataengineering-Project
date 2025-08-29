@@ -78,6 +78,6 @@ It covers **data ingestion, transformation, storage, querying, and automation** 
 
 ---
 
-✨ This project highlights **real-world Azure Data Engineering skills** – from ingestion to automation – and can be extended with **Power BI dashboards** for visualization.
+✨ This project highlights **real-world Azure Data Engineering skills** – from ingestion to automation – and can be extended with **Power BI dashboards** for visualization if required.
 
 ---
