@@ -81,18 +81,4 @@ It covers **data ingestion, transformation, storage, querying, and automation** 
 ✨ This project highlights **real-world Azure Data Engineering skills** – from ingestion to automation – and can be extended with **Power BI dashboards** for visualization if it's required.
 
 ---
-Here’s the **architecture diagram (PNG)** you can add to your GitHub README:
-
-📂 [Download Architecture Diagram](sandbox:/mnt/data/tokyo_olympic_architecture.png)
-
-You can embed it in your `README.md` like this:
-
-```markdown
-## 🏗️ Architecture Diagram  
-
-![Architecture](tokyo_olympic_architecture.png)
-```
-
-👉 Just upload the PNG file into your GitHub repo root and it will render in the README.
-
 
