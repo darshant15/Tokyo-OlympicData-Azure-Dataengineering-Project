@@ -10,6 +10,20 @@
 This project demonstrates an **end-to-end Azure Data Engineering pipeline** built on the **Tokyo Olympic dataset**.
 It covers **data ingestion, transformation, storage, querying, and automation** using Azure cloud services.
 
+---
+## 🚀 Project Highlights
+
+- **Automated Ingestion**: Pipelines in **Azure Data Factory (ADF)** ingest raw Tokyo Olympics datasets (athletes, medals, teams, entries, etc.) into **Azure Data Lake Storage Gen2**.  
+- **Data Lake Architecture**: 
+  - **Raw zone** → Ingested unprocessed datasets  
+  - **Curated zone** → Cleaned, transformed Parquet/Delta data optimized for analytics  
+- **Secure Pipeline Management**: Store credentials and secrets in **Azure Key Vault** for secure operations.  
+- **Scalable Data Processing**: Use **Azure Databricks (PySpark)** for cleaning, deduplication, joins, and aggregations.  
+- **Analytics-Ready Storage**: Query curated datasets using **Azure Synapse Analytics** (SQL serverless/dedicated pool).  
+- **BI & Dashboards**: Build **Power BI** dashboards to visualize insights like medal tallies, gender participation, athlete demographics, and country performance by the data analysis(Report) using data given after ELT from data engineer .
+
+--- 
+
 🔗 **GitHub Repository:** [Tokyo-OlympicData-Azure-Dataengineering-Project](https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project.git)
 
 ---
