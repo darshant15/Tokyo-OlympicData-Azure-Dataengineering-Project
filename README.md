@@ -13,6 +13,10 @@ It covers **data ingestion, transformation, storage, querying, and automation** 
 🔗 **GitHub Repository:** [Tokyo-OlympicData-Azure-Dataengineering-Project](https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project.git)
 
 ---
+## Architect Diagram
+<a href ="[https://github.com/darshant15/Data-Analysis-Dashboard-On-Swiggy-Instamart-Sales-Report-/commit/03f450ebe733933eb48e4b187ce8549c047f3f4e">**Architect-** https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg </a>
+
+---
 
 ## 🎯 Objectives
 
@@ -68,11 +72,6 @@ It covers **data ingestion, transformation, storage, querying, and automation** 
 3. Configure **ADF pipelines** with proper linked services for GitHub and ADLS.
 4. Run pipeline to ingest → transform → load data.
 5. Query insights using **Synapse Analytics**.
-
----
-
-## Architect Diagram
-<a href ="[https://github.com/darshant15/Data-Analysis-Dashboard-On-Swiggy-Instamart-Sales-Report-/commit/03f450ebe733933eb48e4b187ce8549c047f3f4e">**Architect-** https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg </a>
 
 ---
 
