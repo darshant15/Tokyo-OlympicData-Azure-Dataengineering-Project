@@ -1,81 +1,99 @@
-
 # 🏅 Tokyo Olympic Data of 2021 – End-to-End Azure Data Engineering Project
 
 ![Azure](https://img.shields.io/badge/Platform-Microsoft%20Azure-blue)
 ![GitHub](https://img.shields.io/badge/Repo-Version--Controlled-lightgrey)
 ![Pipeline](https://img.shields.io/badge/Data-Pipeline-green)
 
-## 📌 Project Overview
-
-This project demonstrates an **end-to-end Azure Data Engineering pipeline(ELT)** built on the **Tokyo Olympic dataset**.
-It covers **data ingestion, transformation, storage, querying, and automation** using Azure cloud services.
-
 ---
-## 🚀 Project Highlights
 
-- **Automated Ingestion**: Pipelines in **Azure Data Factory (ADF)** ingest raw Tokyo Olympics datasets (athletes, medals, teams, entries, etc.) into **Azure Data Lake Storage Gen2**.  
-- **Data Lake Architecture**: 
-  - **Raw zone** → Ingested unprocessed datasets  
-  - **Curated zone** → Cleaned, transformed Parquet/Delta data optimized for analytics  
-- **Secure Pipeline Management**: Store credentials and secrets in **Azure Key Vault** for secure operations.  
-- **Scalable Data Processing**: Use **Azure Databricks (PySpark)** for cleaning, deduplication, joins, and aggregations.  
-- **Analytics-Ready Storage**: Query curated datasets using **Azure Synapse Analytics** (SQL serverless/dedicated pool).  
-- **BI & Dashboards**: Build **Power BI** dashboards to visualize insights like medal tallies, gender participation, athlete demographics, and country performance by the data analysis(Report) using data given after ELT from data engineer .
+##  Project Overview
 
---- 
-
-🔗 **GitHub Repository:** [Tokyo-OlympicData-Azure-Dataengineering-Project](https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project.git)
-
----
-## Architect Diagram
-
-![Architect](https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg)
+This project demonstrates an **end-to-end Azure Data Engineering pipeline (ELT)** built on the **Tokyo Olympic dataset (2021)**.  
+It comprehensively covers **data ingestion, transformation, storage in efficient formats, cloud scheduling, secure operations, and advanced visual dashboards**, all powered by Azure services.
 
 ---
 
-## 🎯 Objectives
+##  Project Highlights
 
-* Design and implement a **cloud-based ETL pipeline** for Olympic data.
-* Automate **data ingestion, transformation, and analytics**.
-* Showcase integration of multiple **Azure services** with version control on GitHub.
+- **Automated Ingestion**  
+  - Orchestrated via **Azure Data Factory (ADF)** to pull raw datasets (athletes, events, medals, entries) and store them in **ADLS Gen2**.  
+  - Ingestion scheduled with **GitHub triggers** enabling continuous pipeline updates.
 
----
+- **Data Lake Architecture (Medallion)**  
+  - **Bronze (Raw Zone)** 🟤: Unprocessed CSV/JSON data as-is.  
+  - **Silver (Curated Zone)** ⚪: Standardized and validated Parquet/Delta datasets.  
+  - **Gold (Analytics Zone)** 🟡: Aggregated, partitioned datasets optimized for Power BI and Synapse analytics.
 
-## 🏗️ Architecture Workflow
+- **Secure Workflow Management**  
+  - All service credentials managed securely via **Azure Key Vault**.  
+  - Implemented fault-tolerant data pipelines with **retry logic** and error monitoring through ADF alerts.
 
-1. **Data Ingestion** – CSV files ingested from GitHub using **Azure Data Factory (ADF)**.
-2. **Data Lake Storage** – Raw and processed data stored in **Azure Data Lake Storage Gen2** (separate containers for `raw-data` and `transformed-data`).
-3. **Data Processing** – Used **Azure Databricks (Spark)** for:
+- **Scalable Data Processing**  
+  - Used **Azure Databricks (PySpark)** for schema enforcement, cleansing, enrichment, and feature engineering (e.g. athlete age groups, medal tallies, country performance scores).
 
-   * Data cleaning
-   * Deduplication
-   * Feature engineering
-   * Transformations
-4. **Data Warehouse** – Loaded transformed datasets into **Azure Synapse Analytics (Lake Database)** for robust SQL querying and insights.
-5. **Automation & Monitoring** – Implemented **ADF scheduling and monitoring** to ensure reliable and timely pipeline refresh.
-6. **Version Control** – All Databricks notebooks and ADF workflows cloned into **GitHub** for collaboration and reproducibility.
+- **Analytics-Ready Storage**  
+  - Transformed datasets ingested into **Azure Synapse Analytics** (dedicated SQL pool) to enable performant querying with partition optimization by Olympic year and event category.
 
----
-
-## ⚙️ Tech Stack & Tools
-
-* **Azure Data Factory (ADF)** – Data ingestion, orchestration, scheduling
-* **Azure Data Lake Storage Gen2 (ADLS)** – Raw and curated data storage
-* **Azure Databricks (Apache Spark)** – Data cleaning, transformations, feature engineering
-* **Azure Synapse Analytics** – SQL querying, analytics-ready storage
-* **GitHub** – Version control and project showcase
+- **Power BI Dashboards**  
+  - Visualized Olympic insights:  
+    - Top-performing countries  
+    - Gender-wise participation  
+    - Event-category heatmaps  
+    - Medal trends over time
 
 ---
 
-## 📊 Key Insights (Examples)
+## 🗂️ Data Lake Architecture (Medallion)
 
-* Medal distribution across countries and sports
-* Athlete performance analysis
-* Historical trends of Olympic participation
-* Country-wise comparisons
+- **Bronze (Raw Zone) 🟤**  
+  - Houses ingested data as-is for auditability and traceability.
+
+- **Silver (Curated Zone) ⚪**  
+  - Enforces clean schema, duplicates removed, calculated fields added (e.g. Raw to standardized events).
+
+- **Gold (Analytics Zone) 🟡**  
+  - Stores query-ready data with event and country aggregates, partitioned by year/event type.
 
 ---
 
+## 🏗️ Architecture Workflow (with Medallion Layers)
+
+1. **Ingestion → Bronze**  
+   - ADF pipelines ingest raw Olympic data into Bronze container.
+
+2. **Transform → Silver**  
+   - Databricks jobs clean and normalize data, stored in the Silver layer.
+
+3. **Aggregate → Gold**  
+   - Pivotal metrics (e.g., medal counts, top athletes) calculated and stored in Gold for analytics.
+
+4. **Visualization**  
+   - Power BI dashboards draw insights directly from the Gold layer.
+
+---
+
+##  Tech Stack & Tools
+
+| Component                   | Tool / Service                    |
+|----------------------------|-----------------------------------|
+| Orchestration              | Azure Data Factory (ADF)          |
+| Storage Layer              | Azure Data Lake Storage Gen2      |
+| Processing & Transformation | Azure Databricks (PySpark)       |
+| Data Warehouse             | Azure Synapse Analytics           |
+| Secret Management          | Azure Key Vault                   |
+| Dashboarding               | Power BI                          |
+| Version Control            | GitHub                            |
+
+---
+
+##  Key Insights Visualized
+
+- **Top medal-winning countries**  
+- **Athlete participation by age & gender**  
+- **Event-based medal distribution**  
+- **Performance trends across Olympic categories**
+
+---
 ## 🚀 How to Use
 
 1. Clone the repository:
