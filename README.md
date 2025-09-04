@@ -7,7 +7,7 @@
 
 ## 📌 Project Overview
 
-This project demonstrates an **end-to-end Azure Data Engineering pipeline** built on the **Tokyo Olympic dataset**.
+This project demonstrates an **end-to-end Azure Data Engineering pipeline(ELT)** built on the **Tokyo Olympic dataset**.
 It covers **data ingestion, transformation, storage, querying, and automation** using Azure cloud services.
 
 ---
