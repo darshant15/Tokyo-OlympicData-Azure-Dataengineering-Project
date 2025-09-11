@@ -12,6 +12,18 @@ This project demonstrates an **end-to-end Azure Data Engineering pipeline (ELT)*
 It comprehensively covers **data ingestion, transformation, storage in efficient formats, cloud scheduling, secure operations, and advanced visual dashboards**, all powered by Azure services.
 
 ---
+## 🖼️ Architecture Diagram
+
+![Tokyo Olympic Project Architecture](https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/Architect-of-project.jpeg)
+
+---
+
+## 🖼️ Management-level And Hierarchy
+
+
+
+---
+
 
 ##  Project Highlights
 
