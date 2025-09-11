@@ -21,9 +21,9 @@ It comprehensively covers **data ingestion, transformation, storage in efficient
 ## 🖼️ Management-level And Hierarchy
 
 
+![Management Level & Hierarchy](https://github.com/darshant15/Tokyo-OlympicData-Azure-Dataengineering-Project/blob/main/managementLevel%26Hierarchy.jpeg)
 
 ---
-
 
 ##  Project Highlights
 
